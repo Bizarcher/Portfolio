@@ -1,5 +1,3 @@
-Sure, here's the text with all the formatting removed:
-
 ROT15 Encryption Algorithm with Salting
 
 This Python script implements a text encryption and decryption program using a modified ROT15 encryption technique with added salting. It utilizes the tkinter library to create a graphical user interface (GUI) for user interaction.
