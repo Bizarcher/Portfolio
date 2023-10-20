@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPortfolio</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #fff; /* Accent color for the header text */
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #f0f0f0; /* Slightly off-white for section headings */
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .project {
+            margin-bottom: 40px;
+            border: 1px solid #f0f0f0; /* Off-white border for project sections */
+            padding: 20px;
+            background-color: #000; /* Add a black background to the gray sections */
+        }
+
+        /* Accent color for links */
+        a {
+            color: #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            background-color: #000;
+            padding: 10px 0;
+            color: #888; /* Light gray for the copyright text */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JPortfolio</h1>
+        <nav>
+            <a href="#en-content" onclick="showLanguage('en')">English</a>
+            <a href="#pt-content" onclick="showLanguage('pt')">Português</a>
+            <a href="#de-content" onclick="showLanguage('de')">Deutsch</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="en-content">
+            <h2>Home</h2>
+            <p>Welcome to my portfolio website.</p>
+            <h2>My Projects</h2>
+            <div class="project">
+                <a href="http://www.placeholder.com"><h3>Unachi</h3></a>
+                <p>A Python script implementing a secure text encryption and decryption solution using a customized ROT15 encryption method with added salting. The script includes a graphical user interface (GUI) for user-friendly interaction. Random keys enhance security. A versatile tool for those in need of a secure and accessible text encryption and decryption solution.</p>
+            </div>
+            <h2>Contact</h2>
+            <p>If you have any questions, you can contact me at place@holder.com.</p>
+        </section>
+        
+        <section id="pt-content" style="display: none;">
+            <h2>Início</h2>
+            <p>Bem-vindo ao meu site de portfólio.</p>
+            <h2>Meus Projetos</h2>
+            <div class="project">
+                <a href="http://www.placeholder.com"><h3>Unachi</h3></a>
+                <p>Um script Python que implementa uma solução segura de criptografia e descriptografia de texto usando um método de criptografia ROT15 personalizado com adição de salting. O script inclui uma interface gráfica do usuário (GUI) para interação amigável. Chaves aleatórias aprimoram a segurança. Uma ferramenta versátil para quem precisa de uma solução segura e acessível de criptografia e descriptografia de texto.</p>
+            </div>
+            <h2>Contato</h2>
+            <p>Se voce tem alguma pergunta, meu contato e place@holder.com.</p>
+        </section>
+        
+        <section id="de-content" style="display: none;">
+            <h2>Startseite</h2>
+            <p>Willkommen auf meiner Portfolio-Website.</p>
+            <h2>Meine Projekte</h2>
+            <div class="project">
+                <a href="http://www.placeholder.com"><h3>Unachi</h3></a>
+                <p>Ein Python-Skript, das eine sichere Textverschlüsselungs- und Entschlüsselungslösung unter Verwendung einer angepassten ROT15-Verschlüsselungsmethode mit Salzen implementiert. Das Skript enthält eine grafische Benutzeroberfläche (GUI) für benutzerfreundliche Interaktion. Zufällige Schlüssel erhöhen die Sicherheit. Ein vielseitiges Werkzeug für diejenigen, die eine sichere und zugängliche Textverschlüsselungs- und Entschlüsselungslösung benötigen.</p>
+            </div>
+            <h2>Kontakt</h2>
+            <p>Wenn Sie Fragen haben, können Sie mich unter place@holder.com kontaktieren.</p>
+        </section>
+    </div>
+    <script>
+        function showLanguage(language) {
+            document.getElementById('en-content').style.display = 'none';
+            document.getElementById('pt-content').style.display = 'none';
+            document.getElementById('de-content').style.display = 'none';
+            document.getElementById(language + '-content').style.display = 'block';
+        }
+    </script>
+    
+    <footer>
+        &copy; 2023 JPSF | All Rights Reserved.
+    </footer>
+</body>
+</html>
