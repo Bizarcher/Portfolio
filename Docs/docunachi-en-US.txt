@@ -1,0 +1,85 @@
+Sure, here's the text with all the formatting removed:
+
+ROT15 Encryption Algorithm with Salting
+
+This Python script implements a text encryption and decryption program using a modified ROT15 encryption technique with added salting. It utilizes the tkinter library to create a graphical user interface (GUI) for user interaction.
+
+Table of Contents
+1. Introduction
+2. Functions
+    - clear_text(text_widget)
+    - encrypt_text(input_text, output_text)
+    - decrypt_text(input_text, keys_entry, output_text)
+    - get_random_int(min_value, max_value)
+3. Main Function
+4. User Interface
+    - Encryption Tab
+    - Decryption Tab
+5. Execution
+
+Introduction
+
+The script offers a secure text encryption and decryption solution. It employs a customized version of the ROT15 encryption method, enhanced with a salting mechanism. The graphical user interface makes it accessible and user-friendly, allowing users to encrypt and decrypt text with ease. Additionally, random keys are generated for each encryption operation, enhancing security.
+
+Functions
+
+clear_text(text_widget)
+This function clears the content of a tkinter.Text widget, ensuring a clean slate for further text input.
+
+- Parameters:
+    - text_widget: The tkinter.Text widget that will be cleared.
+
+encrypt_text(input_text, output_text)
+The encrypt_text function handles the encryption process using a custom ROT15-based algorithm with added salting for enhanced security.
+
+- Parameters:
+    - input_text: The input tkinter.Text widget where the user enters the text to be encrypted.
+    - output_text: The tkinter.Text widget that displays the encrypted text and combined keys.
+
+decrypt_text(input_text, keys_entry, output_text)
+The decrypt_text function manages the decryption process, allowing users to enter the encrypted text and the combined keys to decrypt it successfully.
+
+- Parameters:
+    - input_text: The input tkinter.Text widget for the encrypted text.
+    - keys_entry: The tkinter.Entry widget where the user inputs the combined keys in the format key1|key2.
+    - output_text: The tkinter.Text widget that displays the decrypted text.
+
+get_random_int(min_value, max_value)
+The get_random_int function generates a random integer between specified minimum and maximum values, providing the essential randomness needed for the encryption keys.
+
+- Parameters:
+    - min_value: The minimum value for the random integer.
+    - max_value: The maximum value for the random integer.
+
+Main Function
+
+main()
+The main function is the entry point of the program, setting up the graphical user interface (GUI) with the help of the tkinter library. It creates a window with two tabs for encryption and decryption, enabling user interaction.
+
+User Interface
+
+The user interface is divided into two tabs, each designed to serve specific functions:
+
+Encryption Tab
+The Encryption Tab allows users to input text for encryption and initiate the encryption process. Key features include:
+
+- Label 1: A label prompting users to "Enter the text to encrypt."
+- Input Text Box 1: A tkinter.Text widget where users input the text to be encrypted.
+- Encrypt Button: A button labeled "Encrypt" that triggers the encryption process. It calls the encrypt_text function.
+- Output Text Box: A tkinter.Text widget that displays the encrypted text and combined keys after encryption is complete.
+
+Decryption Tab
+The Decryption Tab is used for decrypting text encrypted with the program. Key features include:
+
+- Label 2: A label instructing users to "Enter the encrypted text."
+- Input Text Box 2: A tkinter.Text widget where users input the encrypted text.
+- Label 3: A label guiding users to "Enter the combined keys (key1|key2)."
+- Keys Entry: A tkinter.Entry widget for inputting the combined keys in the format key1|key2.
+- Decrypt Button: A button labeled "Decrypt" that initiates the decryption process. It calls the decrypt_text function.
+- Output Text Box: A tkinter.Text widget that displays the decrypted text after decryption is complete.
+
+Execution
+
+The script is designed to be executed as a standalone program. When run, it launches a graphical user interface that enables users to encrypt and decrypt text. The program employs a custom ROT15 encryption method with additional salting to enhance text security. Additionally, random keys are generated for each encryption, making it challenging to decrypt without the proper keys.
+
+Note: Ensure that the necessary libraries, including tkinter and random, are installed in your Python environment before running the script. This program is an excellent choice for users who require a user-friendly, secure text encryption and decryption solution.
